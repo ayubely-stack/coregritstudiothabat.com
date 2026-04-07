@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبات | Liquid Glass UI</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="page">
+
+    <!-- ─── BACKGROUND SCENE ──────────────────────────────────────────────── -->
+    <div class="scene" aria-hidden="true">
+        <div class="scene__blob scene__blob--1"></div>
+        <div class="scene__blob scene__blob--2"></div>
+        <div class="scene__blob scene__blob--3"></div>
+    </div>
+
+    <!-- Theme toggle & Nav -->
+    <div class="top-bar">
+        <div class="nav-brand">
+            <img src="assets/logo.png" alt="Thabat Logo" onerror="this.style.display='none'" style="height: 24px;">
+        </div>
+        
+        <div style="display:flex; gap:12px; align-items:center;">
+            <a href="#download" class="glass glass-btn glass-btn--primary" style="font-size:0.9rem; padding: 0 16px;" data-i18n="nav_download">تحميل</a>
+            <button class="glass glass-btn theme-toggle-btn" id="theme-toggle" aria-label="Toggle colour scheme" title="Toggle Theme">
+                <i data-lucide="sun" class="icon-light" style="width:18px;"></i>
+                <i data-lucide="moon" class="icon-dark" style="width:18px;"></i>
+            </button>
+            <button class="glass glass-btn" id="lang-toggle" aria-label="Toggle language" title="تغيير اللغة" style="width:48px; padding:0; font-weight:800; color:var(--text-main); background:var(--glass-bg); font-family: 'Inter', sans-serif;" data-i18n="lang_btn">EN</button>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- ─── HERO ─────────────────────────────────────────────────────────── -->
+        <header class="hero split-layout">
+            <div class="hero__content">
+                <span class="glass-badge glass-badge--violet hero__kicker" data-i18n="h_kicker">
+                    <i data-lucide="sparkles" stroke-width="2" style="width:14px; margin-left:6px;"></i> الذكاء الحي
+                </span>
+                <h1 class="hero__title" data-i18n="hero_title">ملاذك الآمن<br>للثبات الانفعالي</h1>
+                <p class="hero__sub" data-i18n="hero_subtitle">
+                    استفد من قوة الذكاء الاصطناعي لرصد نوبات الهلع وإدارتها فوراً. نظام متكامل للثبات الانفعالي بخصوصية تامة.
+                </p>
+
+                <div class="hero__cta" style="display:flex; gap: 16px; align-items:center; flex-wrap: wrap;">
+                    <a href="#components" class="glass glass-btn glass-btn--primary" data-i18n="h_cta">ابدأ رحلة التعافي <i data-lucide="arrow-left" style="width:16px; margin-right:8px;"></i></a>
+                    <a href="#" class="store-badge" style="transition: transform 0.2s; display: flex; align-items: center; opacity: 0.6; cursor: not-allowed; pointer-events: none;" title="قريباً"><img src="assets/app-store.svg" alt="Download on the App Store" style="height: 48px; border-radius: 8px;"></a>
+                    <a href="#" class="store-badge" style="transition: transform 0.2s; display: flex; align-items: center;"><img src="assets/google-play.svg" alt="Get it on Google Play" style="height: 48px; border-radius: 8px;"></a>
+                </div>
+
+                <div class="stats stats--left">
+                    <div class="glass stats__item">
+                        <div class="stats__num">+4000</div>
+                        <div class="stats__desc" data-i18n="st_1">مستخدم</div>
+                    </div>
+                    <div class="glass stats__item">
+                        <div class="stats__num">LOCAL</div>
+                        <div class="stats__desc" data-i18n="st_2">خصوصية</div>
+                    </div>
+                    <div class="glass stats__item">
+                        <div class="stats__num">10x</div>
+                        <div class="stats__desc" data-i18n="st_3">أسرع</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen-wrap">
+                        <img src="assets/upscaled-2x-Capture d’écran 2026-04-05 à 12.39.57.png" alt="App Screen" class="phone-screen">
+                    </div>
+                    <div class="floating-icon icon-1"><i data-lucide="heart" stroke-width="2.5"></i></div>
+                    <div class="floating-icon icon-2"><i data-lucide="activity" stroke-width="2.5"></i></div>
+                    <div class="floating-icon icon-3"><i data-lucide="mic" stroke-width="2.5"></i></div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- ─── CARDS / TOOLS ──────────────────────────────────────────────────────── -->
+        <section class="section" id="components">
+            <div class="section__header">
+                <h2 class="section__title" data-i18n="comp_title">التكيف العصبي الذكي</h2>
+                <span class="section__subtitle" data-i18n="comp_sub">أدوات استشعار متقدمة بأسلوب Glassmorphism للتفاعل اللحظي</span>
+            </div>
+            
+            <div class="card-grid">
+                
+                <!-- Card 1 -->
+                <div class="glass glass-card glow-teal">
+                    <div class="glass-card__header">
+                        <div class="card-icon" style="background: rgba(14, 211, 193, 0.15); color: #0ed3c1;">
+                            <i data-lucide="mic"></i>
+                        </div>
+                        <div class="glass-card__label" data-i18n="c1_label">تفاعل صوتي</div>
+                    </div>
+                    <h3 class="glass-card__title" data-i18n="c1_tt">تحدث بثبات</h3>
+                    <p class="glass-card__body" data-i18n="c1_bb">تحويل المشاعر السلبية عبر موجات التحدث الموجهة. تنفس، تحدث، ودع التوتر يتبخر تماماً كنظام حي للتخفيف الفوري.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass glass-card glow-purple">
+                    <div class="glass-card__header">
+                        <div class="card-icon" style="background: rgba(136, 85, 255, 0.15); color: var(--primary);">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <div class="glass-card__label" data-i18n="c2_label">مراقبة مستمرة</div>
+                    </div>
+                    <h3 class="glass-card__title" data-i18n="c2_tt">حارس الحكمة</h3>
+                    <p class="glass-card__body" data-i18n="c2_bb">يقوم بتحليل نبرة صوتك والنصوص المكتوبة أثناء الانفعال عبر قراءة فورية للنبض العصبي، ليمنعك من اتخاذ قرارات متسرعة.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass glass-card glow-rose">
+                    <div class="glass-card__header">
+                        <div class="card-icon" style="background: rgba(255, 51, 102, 0.15); color: var(--danger);">
+                            <i data-lucide="focus_2"></i> <!-- fall back since lucide focus doesn't exist, use crosshair maybe -->
+                            <i data-lucide="crosshair"></i>
+                        </div>
+                        <div class="glass-card__label" data-i18n="c3_label">مشتتات منعدمة</div>
+                    </div>
+                    <h3 class="glass-card__title" data-i18n="c3_tt">درع التركيز</h3>
+                    <p class="glass-card__body" data-i18n="c3_bb">تفعيل حائط صد فوري للعالم الخارجي. يعمل النظام على كتم الإشعارات وتحفيز الهدوء العميق لاستعادة التحكم بحياتك.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass glass-card glow-blue">
+                    <div class="glass-card__header">
+                        <div class="card-icon" style="background: rgba(59, 130, 246, 0.15); color: #3b82f6;">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <div class="glass-card__label" data-i18n="c4_label">تخصيص ذاتي</div>
+                    </div>
+                    <h3 class="glass-card__title" data-i18n="c4_tt">وكيل التكيف</h3>
+                    <p class="glass-card__body" data-i18n="c4_bb">محرك ذكاء اصطناعي يتعلم من أنماط القلق الخاصة بك ليخصص بروتوكولات مخصصة للنوم والصحو تتكيف معك حصرياً.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ─── SECTION 3: RECOVERY CAROUSEL ─── -->
+        <section class="section" id="recovery">
+            <div class="section__header">
+                <h2 class="section__title" data-i18n="carousel_title">أدوات التعافي السريع</h2>
+                <span class="section__subtitle" data-i18n="carousel_subtitle">تفاعل بصري وصوتي سلس لاستعادة التوازن فوراً</span>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel">
+                    <!-- Carousel Item 1 -->
+                    <div class="carousel-item glass glass-card" style="position: relative;">
+                        <div class="micro-tag c-tag-1" data-i18n="tag_sync" style="z-index:10;">Real-time Sync</div>
+                        <div class="illustration-box micro-screen">
+                            <div class="micro-ui-breathing">
+                                <div class="breath-ring-ui">
+                                    <svg class="progress-ring" width="140" height="140">
+                                      <circle class="progress-ring__circle" stroke="#10b981" stroke-width="6" fill="transparent" r="64" cx="70" cy="70"/>
+                                    </svg>
+                                    <div class="breath-center-content">
+                                        <div class="breath-text" id="breath-text-anim" data-i18n="ui_inhale">شهيق</div>
+                                        <div class="breath-timer">04</div>
+                                    </div>
+                                </div>
+                                <div class="breath-metrics">
+                                    <i data-lucide="activity"></i> <span>72 bpm</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-content">
+                            <h3 style="margin-bottom:8px; font-size:1.5rem;" data-i18n="c1_title">تنفس رقمي</h3>
+                            <p style="color:var(--text-mut);" data-i18n="c1_desc">محاكاة بصرية لموجات التنفس لتهدئة معدل ضربات القلب فوراً عبر واجهة مهدئة للعين.</p>
+                        </div>
+                    </div>
+                    <!-- Carousel Item 2 -->
+                    <div class="carousel-item glass glass-card" style="position: relative;">
+                        <div class="micro-tag c-tag-2" data-i18n="tag_vapor" style="z-index:10;">Voice Vaporization</div>
+                        <div class="illustration-box micro-screen">
+                            <div class="micro-ui-venting">
+                                <div class="voice-timer">00:15<span class="muted"> / 02:00</span></div>
+                                <div class="realistic-wave">
+                                    <div class="r-bar b1"></div>
+                                    <div class="r-bar b2"></div>
+                                    <div class="r-bar b3"></div>
+                                    <div class="r-bar b4"></div>
+                                    <div class="r-bar b5"></div>
+                                    <div class="r-bar b6"></div>
+                                    <div class="r-bar b7"></div>
+                                </div>
+                                <div class="mic-button">
+                                    <i data-lucide="mic" style="color: #fff; width: 24px; height: 24px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-content">
+                            <h3 style="margin-bottom:8px; font-size:1.5rem;" data-i18n="c2_title">كبسولة التفريغ</h3>
+                            <p style="color:var(--text-mut);" data-i18n="c2_desc">تحدث بكل ما يزعجك وشاهد صوتك يتبخر ويختفي من النظام تماماً.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION 4: SLEEP PROTOCOLS (COLOR SHIFT) ─── -->
+        <section class="section sleep-section" id="sleep-protocols">
+            <div class="section__header" style="position:relative; z-index:2;">
+                <h2 class="section__title text-white" style="text-shadow: 0 4px 20px rgba(0,0,0,0.5);" data-i18n="sp_tt">بروتوكولات النوم والصحو</h2>
+                <span class="section__subtitle text-white-mut" data-i18n="sp_sub">تصميم حي ينتقل من الأخضر الداكن إلى الأزرق الليلي ثم الفجر السائل</span>
+            </div>
+            
+            <div class="sleep-content glass" style="max-width:900px; margin: 0 auto; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(20px); border-radius: 40px;">
+                <div class="sleep-img-wrapper">
+                    <div class="dawn-glow"></div>
+                    <img src="assets/media__1775399256966.png" alt="Sleep Protocol" class="sleep-img">
+                </div>
+                <div class="sleep-text">
+                    <h3 style="font-size: 2rem; margin-bottom: 16px; color:#fff;" data-i18n="sp_d_t">دورة تجديد كاملة</h3>
+                    <p style="font-size: 1.1rem; color:#d4d4d8; line-height:1.7; margin-bottom: 32px;" data-i18n="sp_d_b">قم بالتبديل بين وضع "الماء الساكن" لحجب الضوء الأزرق تماماً، وبين "الفجر السائل" لإيقاظك تدريجياً عبر الإضاءة الذكية والموجات الصوتية.</p>
+                    
+                    <div class="sleep-bento-grid">
+                        <div class="bento-card">
+                            <i data-lucide="waves" class="bento-icon"></i>
+                            <span class="bento-text-label" data-i18n="be_med">تأمل عميق</span>
+                        </div>
+                        <div class="bento-card">
+                            <i data-lucide="moon" class="bento-icon"></i>
+                            <span class="bento-text-label" data-i18n="be_block">حجب الضوء الأزرق</span>
+                        </div>
+                        <div class="bento-card">
+                            <i data-lucide="sun" class="bento-icon"></i>
+                            <span class="bento-text-label" data-i18n="be_wake">استيقاظ متدرج</span>
+                        </div>
+                        <div class="bento-card">
+                            <i data-lucide="bar-chart-2" class="bento-icon"></i>
+                            <span class="bento-text-label" data-i18n="be_stat">تحليل دورة النوم</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION: TESTIMONIALS (Social Proof) ─── -->
+        <section class="section" id="testimonials">
+            <div class="section__header">
+                <h2 class="section__title" data-i18n="test_title">ماذا يقول مستخدمونا؟</h2>
+                <span class="section__subtitle" data-i18n="test_subtitle">تجارب حقيقية لأشخاص استعادوا توازنهم الانفعالي</span>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                <!-- Testimonial 1 -->
+                <div class="glass antigravity-card ag-1" style="padding: 32px; border-radius: var(--radius-lg); display: flex; flex-direction: column;">
+                    <div style="display:flex; align-items:center; gap:16px; margin-bottom:20px;">
+                        <div class="glass-orb orb-1" data-i18n="t1_av">A</div>
+                        <div>
+                            <h4 style="margin:0; font-size:1.2rem; font-weight:700; color:var(--text-main);" data-i18n="t1_name">أحمد ي.</h4>
+                            <div style="color:#f59e0b; font-size:1rem; display:flex; gap:2px; margin-top:4px;">
+                                <i data-lucide="star" fill="currentColor" stroke="none"></i><i data-lucide="star" fill="currentColor" stroke="none"></i><i data-lucide="star" fill="currentColor" stroke="none"></i><i data-lucide="star" fill="currentColor" stroke="none"></i><i data-lucide="star" fill="currentColor" stroke="none"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color:var(--text-mut); font-size:1.1rem; line-height:1.7;" data-i18n="t1_desc">"التطبيق أنقذني حرفياً خلال نوبة هلع في العمل. خاصية كبسولة التفريغ والتنفس الرقمي أعادتني للهدوء في غضون دقائق معدودة."</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass antigravity-card ag-2" style="padding: 32px; border-radius: var(--radius-lg); display: flex; flex-direction: column;">
+                    <div style="display:flex; align-items:center; gap:16px; margin-bottom:20px;">
+                        <div class="glass-orb orb-2" data-i18n="t2_av">S</div>
+                        <div>
+                            <h4 style="margin:0; font-size:1.2rem; font-weight:700; color:var(--text-main);" data-i18n="t2_name">سارة م.</h4>
+                            <div style="color:#f59e0b; font-size:1rem; display:flex; gap:2px; margin-top:4px;">
+                                <i data-lucide="star" fill="currentColor" stroke="none"></i><i data-lucide="star" fill="currentColor" stroke="none"></i><i data-lucide="star" fill="currentColor" stroke="none"></i><i data-lucide="star" fill="currentColor" stroke="none"></i><i data-lucide="star" fill="currentColor" stroke="none"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color:var(--text-mut); font-size:1.1rem; line-height:1.7;" data-i18n="t2_desc">"كمية الخصوصية والأمان التي أشعر بها لا تقدر بثمن. أحب كيف يتكيف بروتوكول النوم مع حالتي المزاجية يومياً ويساعدني على الاسترخاء."</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass antigravity-card ag-3" style="padding: 32px; border-radius: var(--radius-lg); display: flex; flex-direction: column;">
+                    <div style="display:flex; align-items:center; gap:16px; margin-bottom:20px;">
+                        <div class="glass-orb orb-3" data-i18n="t3_av">K</div>
+                        <div>
+                            <h4 style="margin:0; font-size:1.2rem; font-weight:700; color:var(--text-main);" data-i18n="t3_name">خالد ع.</h4>
+                            <div style="color:#f59e0b; font-size:1rem; display:flex; gap:2px; margin-top:4px;">
+                                <i data-lucide="star" fill="currentColor" stroke="none"></i><i data-lucide="star" fill="currentColor" stroke="none"></i><i data-lucide="star" fill="currentColor" stroke="none"></i><i data-lucide="star" fill="currentColor" stroke="none"></i><i data-lucide="star" fill="currentColor" stroke="none"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color:var(--text-mut); font-size:1.1rem; line-height:1.7;" data-i18n="t3_desc">"التصميم الزجاجي السائل ليس فقط جميلاً، بل مريح للعين أثناء نوبات التوتر. زر الطوارئ SOS عبقري ويعمل بسلاسة مطلقة."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION 5: SOS EMERGENCY ─── -->
+        <section class="section sos-section antigravity-card" id="sos">
+            <div class="neon-orb orb-red"></div>
+            <div class="neon-orb orb-blue"></div>
+            <div class="sos-wrapper">
+                <div class="sos-icon-ring">
+                    <i data-lucide="zap"></i>
+                </div>
+                <h2 class="sos-title" data-i18n="sos_tt2">بروتوكول الطوارئ (SOS)</h2>
+                <p class="sos-desc" data-i18n="sos_dd2">تفاعل ثنائي الحركة (EMDR) لإيقاف نوبات الهلع فوراً. الشاشة تومض ببطء، وتوجيهات صوتية صارمة تعود بك لللحظة.</p>
+                <div class="swipe-to-sos">
+                    <div class="swipe-btn">SOS</div>
+                    <span class="swipe-text"><span data-i18n="sos_swipe">اسحب للطوارئ</span> <i data-lucide="arrow-left" style="width:20px; margin-right: 8px;"></i></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION 6: UI DETAILS ─── -->
+        <section class="section" id="ui-details" style="padding-bottom: 20px;">
+            <div class="section__header">
+                <h2 class="section__title" data-i18n="ui_tt">التجربة الحسية الدقيقة</h2>
+                <span class="section__subtitle" data-i18n="ui_sub">اهتمام استثنائي بتفاصيل تدرج الألوان والإحصائيات</span>
+            </div>
+            <div class="ui-gallery">
+                <div class="phone-wrapper phone-left">
+                    <img src="assets/media__1775399257024.png" alt="Status Path" class="gallery-img img-left">
+                    <div class="micro-tag tag-left" data-i18n="tag_smart">Smart Analysis</div>
+                    <div class="tag-line line-left"></div>
+                </div>
+
+                <div class="phone-wrapper phone-right">
+                    <img src="assets/upscaled-2x-Capture d’écran 2026-04-05 à 12.39.57.png" alt="Safe Space" class="gallery-img img-right">
+                    <div class="micro-tag tag-right" data-i18n="tag_dynamic">Dynamic Colors</div>
+                    <div class="tag-line line-right"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- ─── SECTION 7: FOOTER ─── -->
+        <footer class="footer">
+            <div class="footer-center-glow"></div>
+            <div class="footer-content">
+                <div class="security-badge">
+                    <i data-lucide="lock" class="lock-icon"></i>
+                    <span class="security-text" data-i18n="ft_enc">End-to-End Encryption, 100% Local Processing</span>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#" class="footer-glass-btn" data-i18n="nav_download">Download</a>
+                    <a href="privacy-policy.html" class="footer-glass-btn" data-i18n="ft_p" target="_blank">Privacy Policy</a>
+                    <a href="mailto:thabat@coregritstudio.com" class="footer-glass-btn" data-i18n="ft_c">Contact Us</a>
+                </div>
+                
+                <div class="footer-divider"></div>
+                <p class="footer-copyright">
+                    <span data-i18n="ft_cpr">© 2026 Thabat. Built with Liquid Glass.</span>
+                </p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+
+        // Theme Toggle Logic
+        const themeBtn = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        themeBtn.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+        });
+    </script>
+</body>
+</html>
