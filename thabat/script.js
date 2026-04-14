@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         en: {
             nav_download: "Download",
-            hero_title: "Your Safe Haven for Emotional Stability",
+            hero_title: "Your Safe Haven for Emotional <span class='tnr-italic'>Stability</span>",
             hero_subtitle: "Leverage AI to instantly detect and manage panic attacks. An integrated emotional stability system with total privacy.",
             features_title: "Why Thabat?",
             features_subtitle: "Tested techniques to give you back control.",
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
             sleep_alert_title: "Smart Dimming Tech",
             sleep_alert_desc: "The screen gradually turns to warm colors an hour before your bedtime.",
             test_title: "What Our Users Say?",
-            test_subtitle: "Real experiences from people who regained their emotional balance",
+            test_subtitle: "<span class='tnr-italic'>Real experiences from people who regained their emotional balance</span>",
             t1_name: "Ahmed Y.",
             t1_desc: '"The app literally saved me during a panic attack at work. The venting capsule and digital breathing properties brought me back to calm in minutes."',
             t2_name: "Sarah M.",
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
             st_2: "Privacy",
             st_3: "Faster",
             comp_title: "Smart Neural Adaptation",
-            comp_sub: "Advanced sensing tools with Glassmorphism for real-time interaction",
+            comp_sub: "<span class='tnr-italic'>Advanced sensing tools with Glassmorphism for real-time interaction</span>",
             c1_label: "Voice Interaction",
             c1_tt: "Speak Steadily",
             c1_bb: "Transform negative emotions through guided speech waves. Breathe, speak, and let stress completely vaporize.",
@@ -235,19 +235,19 @@ document.addEventListener('DOMContentLoaded', () => {
             c4_tt: "Adaptation Agent",
             c4_bb: "An AI engine that learns from your anxiety patterns to tailor customized sleep and wake protocols exclusively for you.",
             sp_tt: "Sleep & Wake Protocols",
-            sp_sub: "Live design shifting from dark green to night blue then liquid dawn",
+            sp_sub: "<span class='tnr-italic'>Live design shifting from dark green to night blue then liquid dawn</span>",
             sp_d_t: "Complete Renewal Cycle",
             sp_d_b: "Switch between 'Still Water' mode to block blue light entirely, and 'Liquid Dawn' to wake up gradually with smart lighting.",
             sos_tt2: "Emergency Protocol (SOS)",
             sos_dd2: "Bilateral stimulation (EMDR) to stop panic attacks instantly. The screen flashes slowly with strict voice guidance.",
             ui_tt: "Precise Sensory Experience",
-            carousel_subtitle: "Seamless visual and audio interaction to restore balance instantly",
+            carousel_subtitle: "<span class='tnr-italic'>Seamless visual and audio interaction to restore balance instantly</span>",
             t1_av: "A",
             t2_av: "S",
             t3_av: "K",
             sos_swipe: "SWIPE FOR SOS",
             ft_cpr: "© 2026 Thabat. Built with Liquid Glass.",
-            ui_sub: "Exceptional attention to color gradients and statistics details",
+            ui_sub: "<span class='tnr-italic'>Exceptional attention to color gradients and statistics details</span>",
             badge_soon: "Soon",
             ft_enc: "End-to-End Encryption, 100% Local Processing",
             ft_p: "Privacy Policy",
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (icon) {
                     el.innerHTML = icon.outerHTML + " " + translations[currentLang][key];
                 } else {
-                    el.textContent = translations[currentLang][key];
+                    el.innerHTML = translations[currentLang][key];
                 }
             }
         });

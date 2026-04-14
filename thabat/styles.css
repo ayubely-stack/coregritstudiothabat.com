@@ -4,7 +4,12 @@
 }
 html[lang="en"] {
   --font-main: 'Poppins', sans-serif;
-  letter-spacing: 0.01em; /* Slight letter spacing enhances Poppins readability */
+  letter-spacing: 0.01em;
+}
+
+.tnr-italic {
+  font-family: 'Times New Roman', Times, serif !important;
+  font-style: italic !important;
 }
 
 :root {
