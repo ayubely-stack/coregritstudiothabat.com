@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Ai File Recovery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #10B981;
+            --primary-dark: #059669;
+            --primary-light: #ECFDF5;
+            --text-main: #0F172A;
+            --text-muted: #64748B;
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border-card: #E2E8F0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #10B981 0%, #047857 100%);
+            border-radius: 28px;
+            padding: 40px 32px;
+            color: #ffffff;
+            box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.35);
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 6px 14px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 15px;
+            color: #D1FAE5;
+            max-width: 600px;
+        }
+
+        .meta-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            padding: 14px 20px;
+            margin-bottom: 24px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 22px;
+            padding: 28px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.03);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 30px -4px rgba(15, 23, 42, 0.06);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .card-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .icon-green { background: #ECFDF5; color: #10B981; }
+        .icon-blue { background: #EFF6FF; color: #3B82F6; }
+        .icon-amber { background: #FFFBEB; color: #F59E0B; }
+        .icon-purple { background: #FAF5FF; color: #8B5CF6; }
+        .icon-pink { background: #FDF2F8; color: #EC4899; }
+        .icon-teal { background: #F0FDFA; color: #0D9488; }
+        .icon-slate { background: #F1F5F9; color: #475569; }
+
+        .card h2 {
+            font-size: 19px;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+
+        .card p, .card ul {
+            font-size: 14.5px;
+            color: #334155;
+            line-height: 1.7;
+        }
+
+        .card ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+
+        .card ul li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+
+        .card ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .highlight-box {
+            background: #F0FDF4;
+            border: 1px solid #BBF7D0;
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            color: #166534;
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 0 10px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .footer a {
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 20px 14px; }
+            .header { padding: 28px 20px; }
+            .header h1 { font-size: 24px; }
+            .card { padding: 20px; }
+            .meta-bar { flex-direction: column; gap: 6px; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-badge">🛡️ Official Privacy Guarantee</div>
+            <h1>Privacy Policy</h1>
+            <p>Learn how Ai File Recovery protects your personal data with 100% on-device processing and strict zero-collection architecture.</p>
+        </div>
+
+        <!-- Meta info -->
+        <div class="meta-bar">
+            <span>App: <strong>Ai File Recovery</strong> (v1.0.0)</span>
+            <span>Effective Date: <strong>August 25, 2026</strong></span>
+            <span>Developer: <strong>CoreGrit Studio</strong></span>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon icon-green">🔒</div>
+                <h2>1. Overview & 100% Local Processing</h2>
+            </div>
+            <p>
+                CoreGrit Studio ("we", "our", or "us") developed <strong>Ai File Recovery</strong> (Package: <code>com.coregritstudio.aifilerecovery</code>) as a standalone, on-device utility application. We recognize that your photos, videos, audio recordings, documents, and personal contacts are profoundly private.
+            </p>
+            <div class="highlight-box">
+                🛡️ <strong>Zero Data Transmission Policy:</strong> All scan engines, recovery algorithms, cache analyzers, and file restorations run 100% locally on your smartphone. We do not operate remote file storage servers, and we never collect, upload, transmit, sell, or inspect your personal files.
+            </div>
+        </div>
+
+        <!-- Section 2: Permissions (Google Play Requirement) -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon icon-blue">📁</div>
+                <h2>2. Android System Permissions & Exact Usage</h2>
+            </div>
+            <p>
+                To provide core recovery and file management capabilities, the application requests specific Android runtime permissions. Each permission is used strictly for local device operations:
+            </p>
+            <ul>
+                <li>
+                    <strong>All Files Access (<code>MANAGE_EXTERNAL_STORAGE</code> / <code>READ_EXTERNAL_STORAGE</code>):</strong><br>
+                    Required exclusively to scan deep device directories, system cache partitions, hidden trash folders (<code>.Trash</code>), and unindexed storage sectors to discover lost or deleted photos, videos, audios, and documents, and to write restored files back to your device storage under <code>/Download/Restored_Files/</code> upon your explicit request.
+                </li>
+                <li>
+                    <strong>Granular Media Permissions (<code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_AUDIO</code>):</strong><br>
+                    Utilized on Android 13 (API 33) and newer devices to index and display recoverable media items for user selection and preview prior to restoration.
+                </li>
+                <li>
+                    <strong>Contacts Access (<code>READ_CONTACTS</code>, <code>WRITE_CONTACTS</code>):</strong><br>
+                    Utilized solely when you intentionally trigger the "Contacts Recovery" module to scan for recoverable VCF backup files and re-import selected contacts directly into your local Android address book.
+                </li>
+                <li>
+                    <strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong><br>
+                    Utilized on Android 13+ to send local device alerts when a long-running deep scan or batch file restoration completes.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 3: Data Safety -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon icon-amber">🛡️</div>
+                <h2>3. Google Play Data Safety Declarations</h2>
+            </div>
+            <p>
+                In strict compliance with Google Play Developer Policies and Data Safety requirements:
+            </p>
+            <ul>
+                <li><strong>No User Account or Registration:</strong> You can access and utilize all features without providing your name, email, phone number, or login credentials.</li>
+                <li><strong>No Remote File Uploads:</strong> No files, thumbnails, or directories are ever transferred over the internet.</li>
+                <li><strong>No Third-Party Data Brokers:</strong> We do not sell, rent, or trade your personal data with data brokers or analytics firms.</li>
+            </ul>
+        </div>
+
+        <!-- Section 4: Advertising (Google AdMob) -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon icon-purple">📢</div>
+                <h2>4. Third-Party Advertising (Google AdMob)</h2>
+            </div>
+            <p>
+                To provide free deep scanning and file restoration tools to all users, Ai File Recovery integrates Google AdMob SDK (Google LLC) for delivering advertisements (banner, interstitial, and rewarded video ads).
+            </p>
+            <p style="margin-top: 10px;">
+                Google AdMob may collect pseudonymous diagnostic information in compliance with Google's Privacy Policy, which may include:
+            </p>
+            <ul>
+                <li>Google Advertising Identifier (GAID / AAID)</li>
+                <li>Device technical metrics (model, OS version, coarse carrier/country)</li>
+                <li>Crash logs and advertising performance diagnostics</li>
+            </ul>
+            <p style="margin-top: 10px;">
+                You can review Google's Privacy & Terms regarding advertising data at: <br>
+                <a href="https://policies.google.com/technologies/ads" target="_blank" style="color: var(--primary-dark); font-weight: 700;">https://policies.google.com/technologies/ads</a>
+            </p>
+        </div>
+
+        <!-- Section 5: Children's Privacy -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon icon-pink">👶</div>
+                <h2>5. Children's Privacy (COPPA Compliance)</h2>
+            </div>
+            <p>
+                Ai File Recovery is a general audience tool and is not intended for or directed towards children under the age of 13. We do not knowingly solicit or collect personally identifiable information from children under 13 years of age.
+            </p>
+        </div>
+
+        <!-- Section 6: User Control & Security -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon icon-teal">🔐</div>
+                <h2>6. User Control & Data Retention</h2>
+            </div>
+            <p>
+                You have full control over permissions and data at all times:
+            </p>
+            <ul>
+                <li><strong>Permission Revocation:</strong> You can revoke storage or contacts permissions at any time via Android <code>Settings &gt; Apps &gt; Ai File Recovery &gt; Permissions</code>.</li>
+                <li><strong>File Management:</strong> Restored files are saved directly in your device's public <code>/Download/Restored_Files/</code> directory and can be viewed, shared, or deleted at your discretion using any file manager.</li>
+                <li><strong>Cache Purging:</strong> Uninstalling the application automatically deletes all temporary cache and scan indices generated by the app.</li>
+            </ul>
+        </div>
+
+        <!-- Section 7: Developer Contact -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon icon-slate">📧</div>
+                <h2>7. Contact Information</h2>
+            </div>
+            <p>
+                If you have questions, inquiries, or feedback regarding this Privacy Policy, please contact:
+            </p>
+            <ul style="margin-top: 10px;">
+                <li><strong>Developer:</strong> CoreGrit Studio</li>
+                <li><strong>Application:</strong> Ai File Recovery</li>
+                <li><strong>Package Name:</strong> <code>com.coregritstudio.aifilerecovery</code></li>
+                <li><strong>Support Email:</strong> <a href="mailto:filerecovery-ai@coregritstudio.com" style="color: var(--primary-dark); font-weight: 700;">filerecovery-ai@coregritstudio.com</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2026 CoreGrit Studio. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
